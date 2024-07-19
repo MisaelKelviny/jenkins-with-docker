@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watch=false",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "next": "latest",

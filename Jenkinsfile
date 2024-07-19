@@ -32,8 +32,15 @@ pipeline {
                 sh '''
                     echo "Executando testes"
                     npm run test
+                    npm run test:coverage
                 '''
             }
+        }
+    }
+
+    post {
+        always {
+            junit 'coverage/clover.xml'
         }
     }
 }
