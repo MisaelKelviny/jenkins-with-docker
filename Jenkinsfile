@@ -41,9 +41,8 @@ pipeline {
                 '''
             }
         }
-    }
 
-     stage('Deploy') {
+        stage('Deploy') {
             agent {
                 docker {
                     image 'node:21-alpine'
@@ -59,6 +58,7 @@ pipeline {
                 '''
             }
         }
+    }
 
     post {
         always {
