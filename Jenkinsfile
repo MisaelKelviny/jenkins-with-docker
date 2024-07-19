@@ -22,7 +22,7 @@ pipeline {
         }
 
         stage('Tests') {
-            steps: {
+            steps {
                 sh '''
                     echo "Executando testes"
                     npm run test
